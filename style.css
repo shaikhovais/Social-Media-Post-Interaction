@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.post, .comment {
+  background-color: #fff8ef;
+}
+
+.container {
+  margin: 50px 10px;
+  background-color: #fff8ef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #f9ecda;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.post-info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-info div h1 {
+  margin: 0px 10px 0px 0px;
+}
+
+.post-logo {
+  height: 40px;
+}
+
+.post-info p {
+  background-color: rgb(231, 231, 231);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(111, 111, 111);
+  margin: 0px;
+}
+
+.post-description {
+  font-size: 20px;
+}
+
+.post-img {
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 100%;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.like-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalLikes {
+  font-size: 20px;
+}
+
+.like-buttons button {
+  border: 1px solid black;
+  margin: 0px 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px;
+  border: 1px solid #e29b38;
+  border-radius: 5px;
+  background-color: #fff8ef;
+}
+
+.like:hover {
+  background-color: #f9ecda;
+}
+
+.like-btn,
+.comment-btn {
+  height: 15px;
+}
+
+.comment-btn {
+  height: 100%;
+}
+
+.comment {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.comments-section {
+  overflow-x: scroll;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  border: 1px solid #e29b38;
+}
+
+#newComment {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+#newComment:focus {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  border: 1px solid #e29b38;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #e29b38;
+  background-color: white;
+}
+
+button:hover {
+  background-color: #e29b38;
+  color: white;
+}
+
+#addButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.containerInner button {
+  margin: 5px 5px 10px 0px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.addReplyContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#newReply {
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+#newReply:focus {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.containerInner {
+  width: fit-content;
+}
+
+.containerInner span {
+  font-size: 15px;
+}
+
+.replyContainer {
+  position: relative;
+  left: 50px;
+}
+
+/* hiding the .addReplyContainer */
+.addReplyContainer {
+  display: none;
+}
